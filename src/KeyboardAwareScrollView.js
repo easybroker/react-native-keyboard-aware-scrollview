@@ -9,6 +9,10 @@ import {
 import KeyboardAwareBase from './KeyboardAwareBase'
 
 export default class KeyboardAwareScrollView extends KeyboardAwareBase {
+  scrollToEnd = () => {
+    this._keyboardAwareView.scrollToEnd()
+  }
+
   render() {
     return (
       <ScrollView {...this.props} {...this.style}
